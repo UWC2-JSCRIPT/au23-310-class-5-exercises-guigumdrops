@@ -6,11 +6,10 @@ aEl.id = 'cta'
 const lastP = document.querySelector('p:last-child')
 lastP.after(aEl);
 
-
 // Access (read) the data-color attribute of the <img>,
 // log to the console
 const imgEl = document.querySelector('img')
-const datacolor = imgEl.dataset.color;
+const datacolor = imgEl.getAttribute('data-color');
 console.log(datacolor);
 
 // Update the third <li> item ("Turbocharged"), 
@@ -20,6 +19,4 @@ li3.classList.add('highlight')
 
 // Remove (delete) the last paragraph
 // (starts with "Available for purchase now…")
-const pEl = document.querySelector('p:last-child');
-debugger
-pEl.parentNode.removeChild(pEl);
+lastP.parentNode.removeChild(lastP);

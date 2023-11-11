@@ -10,7 +10,7 @@ liElements.forEach(liElement => {
 // If a delete link is clicked, delete the li element / remove from the DOM
 const delLink = document.getElementsByClassName('delete')
 delLink.forEach(deleteLink => {
-  deleteLink.addEventListener('click', function() {
+  delLink.addEventListener('click', function() {
     const liElement = this.closest('li');
     liElement.parentNode.removeChild(liElement);
   }

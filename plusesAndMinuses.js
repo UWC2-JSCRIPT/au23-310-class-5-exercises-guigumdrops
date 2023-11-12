@@ -1,13 +1,14 @@
 // When a user clicks the + element, the count should increase by 1 on screen.
 // When a user clicks the – element, the count should decrease by 1 on screen.
-const plusButton = document.getElementById('plus')
-const minusButton = document.getElementById('minus')
-const count = document.getElementById('count')
-let count = 0;
-plusButton.forEach(clickPlus => {
-    plusButton.addEventListener('click', function() {
-        count++;
-        const countElement = document.querySelector('#count');
-        countElement.textContent = count;
-    });       
+const plusEl = document.getElementById('plusIMG');
+const minusEl = document.getElementById('minusIMG');
+const countEl = document.getElementById('count');
+let counter = 0
+plusEl.addEventListener('click', () => {
+    counter++;
+    countEl.textContent = `Count: ${counter}`;
+});
+minusEl.addEventListener('click', () => {
+    counter--;
+    countEl.textContent = `Count: ${counter}`;
 });

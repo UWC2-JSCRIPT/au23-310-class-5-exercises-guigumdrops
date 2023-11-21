@@ -11,5 +11,6 @@ console.log(bodyEl);
 // Given the <p> element as var p,
 // access the 3rd <li>  and log to the console.
 const pEl = document.querySelector('p');
-const thirdLi = pEl.previousSibling.previousSibling.firstChild.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling;
+const prevSib = pEl.previousElementSibling
+const thirdLi = prevSib.children[2]
 console.log(thirdLi);

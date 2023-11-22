@@ -1,8 +1,9 @@
 // If an li element is clicked, toggle the class "done" on the <li>
 const ulEl = document.querySelector('ul');
-ulEl.addEventListener('click', (event) => {
-  if (event.target.tagName === 'LI') {
-    event.target.classList.toggle('done');
+const liEl = document.querySelector('li')
+ulEl.addEventListener('click', (e) => {
+  if (e.target.tagName === 'LI') {
+    e.target.classList.toggle('done');
   }
 });
 
